@@ -1,0 +1,38 @@
+{
+  "name": "learning-rust-todo",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"bun run backend:dev\" \"bun run frontend:dev\"",
+    "start": "concurrently \"bun run backend:start\" \"bun run frontend:start\"",
+    "build": "bun run frontend:build",
+    "backend:dev": "cd backend/api && cargo run",
+    "backend:start": "cd backend/api && cargo run --release",
+    "backend:build": "cd backend/api && cargo build --release",
+    "frontend:dev": "cd web/client && bun run dev",
+    "frontend:start": "cd web/client && bun run start",
+    "frontend:build": "cd web/client && bun run build",
+    "setup": "bun run setup:frontend && bun run setup:backend",
+    "setup:frontend": "cd web/client && bun install",
+    "setup:backend": "cd backend/api && cargo build",
+    "db:migrate": "cd backend/api && diesel migration run",
+    "db:reset": "cd backend/api && diesel migration redo",
+    "test:api": "cd backend/api && python test_api.py",
+    "clean": "bun run clean:frontend && bun run clean:backend",
+    "clean:frontend": "cd web/client && rm -rf .next node_modules",
+    "clean:backend": "cd backend/api && cargo clean"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "concurrently": "^8.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "workspaces": [
+    "packages/*",
+    "web/*",
+    "backend/*"
+  ]
+}

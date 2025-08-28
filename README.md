@@ -1,4 +1,4 @@
-# Learning Rust Todo App
+# A Monorepo with Next.js as forntend and rust as backend
 
 A full-stack todo application built with Rust (Axum + Diesel) backend and Next.js frontend.
 
@@ -24,8 +24,8 @@ learning-rust-todo/
 ### 1. Clone and Setup
 
 ```bash
-git clone <your-repo>
-cd learning-rust-todo
+git clone https://github.com/aditya-raj-panjiyara/bun_nextjs_rust
+cd bun_nextjs_rust
 
 # Install all dependencies
 bun run setup
@@ -134,16 +134,6 @@ DATABASE_URL=postgres://postgres:1729@localhost:5432/test123
 - Check the browser console and terminal for error messages
 - The backend logs all requests and errors to the console
 
-## 🎯 Features
-
-- ✅ Create, read, update, delete todos
-- ✅ Mark todos as complete/incomplete
-- ✅ Real-time updates with the database
-- ✅ Responsive design
-- ✅ Error handling and loading states
-- ✅ TypeScript for type safety
-- ✅ Database migrations
-- ✅ CORS support for development
 
 ## 📚 Learning Resources
 

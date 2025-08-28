@@ -5,7 +5,7 @@ A full-stack todo application built with Rust (Axum + Diesel) backend and Next.j
 ## 🏗️ Project Structure
 
 ```
-learning-rust-todo/
+bun_nextjs_rust/
 ├── backend/api/          # Rust API server (Axum + Diesel + PostgreSQL)
 ├── web/client/           # Next.js frontend (React + TypeScript + Tailwind)
 ├── package.json          # Monorepo scripts and dependencies

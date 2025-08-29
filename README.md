@@ -97,22 +97,12 @@ This will start:
 - **Tailwind CSS** - Styling
 - **Axios** - HTTP client
 
-## 🔧 API Endpoints
-
-| Method | Endpoint      | Description         |
-| ------ | ------------- | ------------------- |
-| GET    | `/todos`      | Get all todos       |
-| POST   | `/todos`      | Create a new todo   |
-| GET    | `/todos/{id}` | Get a specific todo |
-| PUT    | `/todos/{id}` | Update a todo       |
-| DELETE | `/todos/{id}` | Delete a todo       |
-
 ## 📝 Environment Variables
 
 Create `backend/api/.env`:
 
 ```env
-DATABASE_URL=postgres://postgres:1729@localhost:5432/test123
+DATABASE_URL=postgres://username:password@localhost:5432/test123
 ```
 
 ## 🐛 Troubleshooting
